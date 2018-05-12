@@ -1,0 +1,12 @@
+<ul>
+  <li *ngFor="let item of lista">
+    <input type="text" [(ngModel)]="item.nome" />
+    <input type="text" [(ngModel)]="item.fone" />
+    <button (click)="delete(item.id)">Remover</button>
+    <button (click)="alterar(item.id, item.nome, item.fone)">Alterar</button>
+  </li>
+</ul>
+
+<input type="text" [(ngModel)]="nome" />
+<input type="text" [(ngModel)]="fone" />
+<button (click)="inserir()">Inserir</button>
